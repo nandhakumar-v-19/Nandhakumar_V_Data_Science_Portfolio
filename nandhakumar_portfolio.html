@@ -165,12 +165,12 @@
 <nav>
   <div class="nav-logo">NV</div>
   <ul class="nav-links">
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#certifications">Certs</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Skills</a></li>
+    <li><a onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Projects</a></li>
+    <li><a onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Experience</a></li>
+    <li><a onclick="document.getElementById('education').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Education</a></li>
+    <li><a onclick="document.getElementById('certifications').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Certs</a></li>
+    <li><a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Contact</a></li>
   </ul>
 </nav>
 
@@ -183,7 +183,7 @@
     B.Tech graduate in AI & Data Science (CGPA 7.8) with experience across supervised ML, deep learning (CNNs, LSTM), NLP, and REST API development. Four internships. IABAC &amp; NASSCOM certified. Based in Salem, Tamil Nadu — open to Bangalore, Chennai, Hyderabad, and remote.
   </p>
   <div class="hero-cta">
-    <a href="#projects" class="btn btn-primary">View Projects →</a>
+    <a onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" class="btn btn-primary" style="cursor:pointer">View Projects →</a>
     <a href="https://linkedin.com/in/nandhakumar-v1928/" target="_blank" class="btn btn-secondary">LinkedIn ↗</a>
     <a href="https://github.com/nandhakumar-v-19" target="_blank" class="btn btn-secondary">GitHub ↗</a>
   </div>
@@ -309,18 +309,32 @@
     </div>
 
     <div class="project-card">
-      <div class="project-domain">Computer Vision · CNN · Healthcare</div>
-      <h3>CNN-Based Image Classification</h3>
-      <p>Two CNN-based disease detection systems built with TensorFlow/Keras — Rice Leaf Disease (3-class: Leaf Smut, Brown Spot, Bacterial Blight) and Skin Disorder Detection (6-class clinical classifier). Both use data augmentation pipelines.</p>
+      <div class="project-domain">Computer Vision · CNN · Agriculture</div>
+      <h3>Rice Leaf Disease Detection</h3>
+      <p>Built a CNN-based image classifier to identify three major rice leaf diseases — Leaf Smut, Brown Spot, and Bacterial Leaf Blight — supporting early agricultural intervention and reducing crop loss.</p>
       <div class="project-metrics">
-        <span class="metric">High Val Accuracy</span>
+        <span class="metric">3-Class Detection</span>
         <span class="metric">Data Augmentation</span>
-        <span class="metric">2 Domains</span>
+        <span class="metric">CNN Architecture</span>
       </div>
       <div class="project-stack">
         <span class="stack-tag">Python</span><span class="stack-tag">TensorFlow</span><span class="stack-tag">Keras</span><span class="stack-tag">CNN</span><span class="stack-tag">Image Augmentation</span>
       </div>
       <a href="https://github.com/nandhakumar-v-19/Rice-Leaf-Disease-using-CNN" target="_blank" class="project-link">View on GitHub →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-domain">Computer Vision · CNN · Healthcare</div>
+      <h3>Skin Disorder Detection</h3>
+      <p>Developed a multi-class ML classifier to distinguish between 6 types of skin disorders using clinical and histopathological features, aiding dermatological screening in resource-limited settings.</p>
+      <div class="project-metrics">
+        <span class="metric">6-Class Classification</span>
+        <span class="metric">Clinical Features</span>
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span><span class="stack-tag">scikit-learn</span><span class="stack-tag">SVM</span><span class="stack-tag">Decision Tree</span><span class="stack-tag">pandas</span>
+      </div>
+      <a href="https://github.com/nandhakumar-v-19/Skin-Disorder-Detection" target="_blank" class="project-link">View on GitHub →</a>
     </div>
 
     <div class="project-card">
